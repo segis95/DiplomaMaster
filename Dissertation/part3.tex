@@ -387,144 +387,21 @@ $$\text{Binary~crossentropy}(P, T) := -\sum_{i,j}\Large[T_{i,j}\log{P_{i,j}} + (
 
 Приведённые ниже изображения иллюстрируют таблицу \ref{fig:10_perc}: значение K над изображениями указывает, какому значению K в таблице модель соответствует. Методология следующая: берутся {\bf 100 подряд идущих} изображений {\bf валидационной выборки} и отбираются {\bf все}, демонстрирующие визуальное ухудшение или улучшение сегментации относительно FS-обучения на слабо размеченном наборе данных. 
 
-Среди первых {\bf 100} подряд идущих изображений было зафиксировано {\bf 3} случая ухудшения качества сегментации после применения MIL, и {\bf 22 случая} её улучшения. 
+Среди первых {\bf 100} подряд идущих изображений было зафиксировано {\bf 3} случая ухудшения качества сегментации после применения MIL, и {\bf 22 случая} её улучшения. На рис. \ref{fig:better} и \ref{fig:worse}  приведены по одному примеру для каждого случая(остальные случаи см. в приложении \ref{AppendixA}).
 
-\subsection{Ухудшение сегментации}
 
-\begin{figure}[h!] 
+ \begin{figure}[h!] 
   \center
-  \includegraphics [scale=0.7] {images/bad_1.png}
+  \includegraphics [scale=0.7] {images/good_22.png}
+  \caption{Пример улучшения сегментации}
+  \label{fig:better}
 \end{figure}
-
-\begin{figure}[h!] 
-  \center
-  \includegraphics [scale=0.7] {images/bad_2.png}
-\end{figure}
-
 
 \begin{figure}[h!] 
   \center
   \includegraphics [scale=0.7] {images/bad_3.png}
-\end{figure}
-
-\newpage
-\subsection{Улучшение сегментации}
-
-\begin{figure}[h!] 
-  \center
-  \includegraphics [scale=0.7] {images/good_1.png}
-\end{figure}
-
-
-\begin{figure}[h!] 
-  \center
-  \includegraphics [scale=0.7] {images/good_2.png}
-\end{figure}
-
-\begin{figure}[h!] 
-  \center
-  \includegraphics [scale=0.7] {images/good_3.png}
-\end{figure}
-
-\begin{figure}[h!] 
-  \center
-  \includegraphics [scale=0.7] {images/good_4.png}
-\end{figure}
-
-
-\begin{figure}[h!] 
-  \center
-  \includegraphics [scale=0.7] {images/good_5.png}
-\end{figure}
-
-
-\begin{figure}[h!] 
-  \center
-  \includegraphics [scale=0.7] {images/good_6.png}
-\end{figure}
-
-\begin{figure}[h!] 
-  \center
-  \includegraphics [scale=0.7] {images/good_7.png}
-\end{figure}
-
-\begin{figure}[h!] 
-  \center
-  \includegraphics [scale=0.7] {images/good_8.png}
-\end{figure}
-
-\begin{figure}[h!] 
-  \center
-  \includegraphics [scale=0.7] {images/good_9.png}
-\end{figure}
-
-
-\begin{figure}[h!] 
-  \center
-  \includegraphics [scale=0.7] {images/good_10.png}
-\end{figure}
-
-\begin{figure}[h!] 
-  \center
-  \includegraphics [scale=0.7] {images/good_11.png}
-\end{figure}
-
-\begin{figure}[h!] 
-  \center
-  \includegraphics [scale=0.7] {images/good_12.png}
-\end{figure}
-
-\begin{figure}[h!] 
-  \center
-  \includegraphics [scale=0.7] {images/good_13.png}
-\end{figure}
-
-\begin{figure}[h!] 
-  \center
-  \includegraphics [scale=0.7] {images/good_14.png}
-\end{figure}
-
-\begin{figure}[h!] 
-  \center
-  \includegraphics [scale=0.7] {images/good_15.png}
-\end{figure}
-
-
-\begin{figure}[h!] 
-  \center
-  \includegraphics [scale=0.7] {images/good_16.png}
-\end{figure}
-
-
-\begin{figure}[h!] 
-  \center
-  \includegraphics [scale=0.7] {images/good_17.png}
- \end{figure} 
-  
-  \begin{figure}[h!] 
-  \center
-  \includegraphics [scale=0.7] {images/good_18.png}
-  \end{figure} 
-  
-  \begin{figure}[h!] 
-  \center
-  \includegraphics [scale=0.7] {images/good_19.png}
-\end{figure}
-
-
-  \begin{figure}[h!] 
-  \center
-  \includegraphics [scale=0.7] {images/good_20.png}
-\end{figure}
-
-  \begin{figure}[h!] 
-  \center
-  \includegraphics [scale=0.7] {images/good_21.png}
-  \end{figure} 
-  
-  \begin{figure}[h!] 
-  \center
-  \includegraphics [scale=0.7] {images/good_22.png}
+  \caption{Пример ухудшения сегментации}
+  \label{fig:worse}
 \end{figure}
 
 
